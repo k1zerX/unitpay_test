@@ -1,10 +1,11 @@
-import 'dart:html';
+import 'dart:math';
 
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:unitpay_test/features/style/this.dart';
+import 'package:unitpay_test/features/util/this.dart';
 import 'package:unitpay_test/features/widgets/this.dart';
 
 part 'this.freezed.dart';

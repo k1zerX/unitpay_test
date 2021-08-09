@@ -10,8 +10,9 @@ class UPApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider<CatalogBloc>(
-      create: (context) => CatalogBloc(),
+      create: (context) => CatalogBloc.random(),
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: CatalogScreen(),
       ),
     );

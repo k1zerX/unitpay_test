@@ -13,8 +13,7 @@ class UPButton extends TextButton {
         child: child,
         style: style.merge(defaultStyle),
       );
-    
-  // default button style
+
   static final ButtonStyle defaultStyle = styleFrom(
     primary: UPColors.white,
     backgroundColor: UPColors.blue,
@@ -24,10 +23,11 @@ class UPButton extends TextButton {
     ),
     side: BorderSide.none,
     shape: const RoundedRectangleBorder(
-      borderRadius: BorderRadius.all(Radius.circular(5.0)),
+      borderRadius: BorderRadius.zero,
     ),
     alignment: Alignment.center,
     fixedSize: Size.square(32.0),
+    minimumSize: Size.square(32.0),
     padding: const EdgeInsets.all(8.0),
   );
 
@@ -40,6 +40,7 @@ class UPButton extends TextButton {
     AlignmentGeometry? alignment,
     EdgeInsetsGeometry? padding,
     Size? fixedSize,
+    Size? minimumSize,
   }) {
     return TextButton.styleFrom(
       primary: primary,
@@ -50,6 +51,7 @@ class UPButton extends TextButton {
       alignment: alignment,
       fixedSize: fixedSize,
       padding: padding,
+      minimumSize: minimumSize,
     );
   }
 }

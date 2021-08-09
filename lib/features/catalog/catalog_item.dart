@@ -6,6 +6,7 @@ class CatalogItem with _$CatalogItem, EquatableMixin {
 
   const factory CatalogItem({
     required int id,
+    required String title,
     required String imgUrl,
   }) = _CatalogItem;
 

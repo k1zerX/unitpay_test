@@ -1,4 +1,4 @@
-part of 'this.dart';
+part of '../this.dart';
 
 class CatalogBloc extends Bloc<CatalogEvent, CatalogState> {
   CatalogBloc({

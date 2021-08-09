@@ -1,4 +1,4 @@
-part of 'this.dart';
+part of '../this.dart';
 
 @freezed
 class CatalogEvent with _$CatalogEvent {
